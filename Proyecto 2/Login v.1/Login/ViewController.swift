@@ -1,0 +1,81 @@
+//
+//  ViewController.swift
+//  Login
+//
+//  Created by Usuario invitado on 9/10/18.
+//  Copyright © 2018 1. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var Username: UITextField!
+    
+    @IBOutlet weak var Password: UITextField!
+    var Users : [UserData] = [UserData(firsname: "1", lastname: "1", username: "1", password: "1") ]
+    
+    
+    
+    @IBAction func SignUp(_ sender: UIButton) {
+        var validate: Bool = true
+        if let Username = Username.text, let password = Password.text{
+            for user in Users{
+                if Username == user.username, password == user.password{
+                    print("Usuario no valido")
+                    break
+                }else {
+                    validate = false
+                }
+            }
+        }
+        if !validate{
+            showError ()
+            
+        }
+        Username.becomeFirstResponder()
+        Password.resignFirstResponder()
+        
+    }
+    
+
+    override func viewDidLoad() {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "primera"{
+            print("ejecutando")
+        }
+        if segue.identifier == "segunda"{
+            print("EEEEEEEEEEEEEEEEEEEEQQQ")
+            
+        }
+        
+        
+    }
+  
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "primera"{
+            return true
+        }
+        else{
+                return false
+            }
+        }
+    
+    
+    func showError() {
+        let errorAlert = UIAlertController(title: "Error", message: "No se encuenra registrado", preferredStyle: .alert )
+        let okaction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        errorAlert.addAction(okaction)
+        present( errorAlert,animated: true, completion: nil)
+    }
+    
+    @IBAction func unwindSecondView( segue: UIStoryboardSegue){
+        
+    }
+    
+}
+
+
