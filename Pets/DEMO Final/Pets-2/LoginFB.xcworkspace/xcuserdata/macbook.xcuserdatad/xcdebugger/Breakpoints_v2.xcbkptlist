@@ -22,89 +22,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LoginFB/MapViewController.swift"
-            timestampString = "565818973.645748"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "MapViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pets1.MapViewController.mapa.getter : weak Swift.Optional&lt;__C.MKMapView&gt;"
-                  moduleName = "Pets1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbook/Downloads/Pets-2/LoginFB/MapViewController.swift"
-                  timestampString = "565820730.498971"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pets1.MapViewController.mapa.setter : weak Swift.Optional&lt;__C.MKMapView&gt;"
-                  moduleName = "Pets1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbook/Downloads/Pets-2/LoginFB/MapViewController.swift"
-                  timestampString = "565820730.501076"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "106">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pets1.MapViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Pets1.MapViewController"
-                  moduleName = "Pets1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbook/Downloads/Pets-2/LoginFB/MapViewController.swift"
-                  timestampString = "565820730.503394"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "353">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pets1.MapViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Pets1.MapViewController&gt;"
-                  moduleName = "Pets1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbook/Downloads/Pets-2/LoginFB/MapViewController.swift"
-                  timestampString = "565820730.506171"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "317">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoginFB/VecteViewController.swift"
-            timestampString = "565804371.45234"
+            timestampString = "565828235.52482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -120,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoginFB/VecteViewController.swift"
-            timestampString = "565804371.452397"
+            timestampString = "565828235.526491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"

@@ -18,6 +18,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     var adress = ""
 
 
+    
     @IBOutlet weak var mapa: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
