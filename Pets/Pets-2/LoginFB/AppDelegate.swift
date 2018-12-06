@@ -2,12 +2,14 @@
 //  AppDelegate.swift
 //  LoginFB
 //
-//  Created by Germán Santos Jaimes on 11/7/18.
-//  Copyright © 2018 Germán Santos Jaimes. All rights reserved.
+//  Created by Usuario invitado on 11/7/18.
+//  Copyright © 2018 . All rights reserved.
 //
 
 import UIKit
 import Firebase
+import UserNotifications
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (accepted, error) in
+            if !accepted {
+                print("permisos denagado")
+                
+            }
+        }
+        
         return true
     }
 

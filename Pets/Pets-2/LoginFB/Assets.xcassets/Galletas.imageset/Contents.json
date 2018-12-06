@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-dog-biscuit-animal-cracker-pet-shop-green-mussel-5b14fff09f8fb1.4487777115281028966536.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-dog-biscuit-animal-cracker-pet-shop-green-mussel-5b14fff09f8fb1.4487777115281028966536-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-dog-biscuit-animal-cracker-pet-shop-green-mussel-5b14fff09f8fb1.4487777115281028966536-2.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

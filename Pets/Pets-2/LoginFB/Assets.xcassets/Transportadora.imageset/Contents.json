@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-pet-sitting-dog-cat-pet-travel-nosotros-archivos-gamonal-5b7365c850a8c8.2144115815342893523304.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-pet-sitting-dog-cat-pet-travel-nosotros-archivos-gamonal-5b7365c850a8c8.2144115815342893523304-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-pet-sitting-dog-cat-pet-travel-nosotros-archivos-gamonal-5b7365c850a8c8.2144115815342893523304-2.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

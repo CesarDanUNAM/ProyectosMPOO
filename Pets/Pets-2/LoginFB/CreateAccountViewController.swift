@@ -2,15 +2,15 @@
 //  CreateAccountViewController.swift
 //  LoginFB
 //
-//  Created by Germán Santos Jaimes on 11/7/18.
-//  Copyright © 2018 Germán Santos Jaimes. All rights reserved.
+//  Created by  on 11/7/18.
+//  Copyright © 2018 . All rights reserved.
 //
 
 import UIKit
 import Firebase
 
 
-class CreateAccountViewController: UIViewController {
+class CreateAccountViewController: UIViewController, UITextFieldDelegate{
 
     
     @IBOutlet weak var nombre: UITextField!
@@ -19,8 +19,10 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nombre.delegate = self
+        email.delegate = self
+        password.delegate = self
+    
     }
     
 
@@ -37,6 +39,8 @@ class CreateAccountViewController: UIViewController {
         Auth.auth().createUser(withEmail: correo, password: pass) { (data, error) in
             if let error = error{
                 debugPrint(error.localizedDescription)
+                self.showError()
+
             }
             
             let user = data?.user
@@ -45,6 +49,7 @@ class CreateAccountViewController: UIViewController {
             changeRequest?.commitChanges(completion: { (error) in
                 if let error = error{
                     debugPrint(error.localizedDescription)
+
                 }
             })
             
@@ -63,5 +68,21 @@ class CreateAccountViewController: UIViewController {
         }
     
     }
+    func showError(){
+        let errorAlert = UIAlertController(title: "Error", message: "Sus datos no son correctos", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        errorAlert.addAction(okAction)
+        
+        present(errorAlert, animated: true, completion: nil)
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     
 }
